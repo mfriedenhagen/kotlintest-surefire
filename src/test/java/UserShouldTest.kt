@@ -1,7 +1,4 @@
 import io.kotlintest.specs.ShouldSpec
-import org.junit.Test
-
-import org.junit.Assert.*
 
 class UserShouldTest : ShouldSpec() {
     init {
