@@ -8,5 +8,11 @@ class UserShouldTest : ShouldSpec() {
                 sut.age shouldEqual 11
             }
         }
+        "A user with age 10" {
+            val sut  = User(10)
+            should("be 10") {
+                sut.age shouldEqual 11
+            }
+        }
     }
 }
