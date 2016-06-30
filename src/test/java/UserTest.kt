@@ -12,4 +12,8 @@ class UserTest {
         val sut = User(18)
         assertEquals(11, sut.age)
     }
+    @Test
+    fun throwException() {
+        throw RuntimeException("oops")
+    }
 }
