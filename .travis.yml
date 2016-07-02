@@ -5,4 +5,4 @@ jdk:
 install:
   - "mvn -N -q io.takari:maven:wrapper -Dmaven=3.3.9"
   - "./mvnw -B -q -DskipTests clean verify dependency:go-offline"
-script: './mvnw -B -q clean verify'
+script: './mvnw -B -q clean test'
