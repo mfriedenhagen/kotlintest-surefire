@@ -9,7 +9,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kotlin.version>1.0.2-1</kotlin.version>
+        <kotlin.version>1.0.3</kotlin.version>
+        <kotlintest.version>1.2.0</kotlintest.version>
     </properties>
 
     <dependencies>
@@ -21,7 +22,7 @@
         <dependency>
             <groupId>io.kotlintest</groupId>
             <artifactId>kotlintest</artifactId>
-            <version>1.2.0</version>
+            <version>${kotlintest.version}</version>
             <scope>test</scope>
             <exclusions>
                 <!-- exclude because classes duplicate those from transitive mockito-all -->
@@ -59,7 +60,6 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
 
