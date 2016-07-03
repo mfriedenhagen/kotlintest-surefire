@@ -1,8 +1,10 @@
 language: java
 sudo: no
+env:
+  - kotlintest_version=1.2.0
+  - kotlintest_version=1.2.1-SNAPSHOT
 jdk:
   - oraclejdk8
 install:
   - "mvn -N -q io.takari:maven:wrapper -Dmaven=3.3.9"
-  - "./mvnw -B -q -DskipTests clean verify dependency:go-offline"
-script: './mvnw -B -q clean test'
+script: './mvnw -B -q -Dkotlintest.version=${kotlintest_version} clean test'
