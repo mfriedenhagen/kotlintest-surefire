@@ -1,8 +1,7 @@
 language: java
 sudo: no
 env:
-  - kotlintest_version=1.2.0
-  - kotlintest_version=1.2.1-SNAPSHOT
+  - kotlintest_version=1.3.0
 jdk:
   - oraclejdk8
 install:
